@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content" android:layout_height="wrap_content"
+android:orientation="vertical">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#3584d1"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:visibility="visible" >
+
+		<Button
+		    android:id="@+id/btnselectall"
+		    android:layout_width="90dp"
+		    android:layout_height="wrap_content"
+		    android:text="Select All" />
+				<Button
+		    android:id="@+id/btnclearselect"
+		    android:layout_width="60dp"
+		    android:layout_height="wrap_content"
+		    android:text="Clear" />
+		
+		<TextView
+		    android:id="@+id/currentdevspace"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="center_vertical"
+		    android:layout_marginLeft="5dp"
+		    android:textColor="#000000"
+		    android:textSize="15dp"
+		    android:visibility="gone" />
+		
+		<ProgressBar
+		    android:id="@+id/statloader"
+		    style="@android:style/Widget.ProgressBar.Large"
+		    android:layout_width="25dp"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="5dp"
+		    android:indeterminate="true" />
+
+	</LinearLayout>
+    
+	<ListView
+	    android:id="@android:id/list"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@+id/header"
+	    android:layout_marginBottom="45dp" >
+
+	</ListView>
+
+	<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/footer"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="#3584d1"
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    android:paddingTop="3dp"
+	    android:visibility="visible" >
+
+		<Button
+		    android:id="@+id/btnCancel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:height="15dp"
+		    android:text="Cancel"
+		    android:width="70dp" />
+
+		<Button
+		    android:id="@+id/btnView"
+		    android:layout_width="122dp"
+		    android:layout_height="wrap_content"
+		    android:height="15dp"
+		    android:text="View Selections"
+		    android:width="140dp" />
+
+		<Button
+		    android:id="@+id/btnViewdl"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:height="15dp"
+		    android:text="View Downloads"
+		    android:width="140dp" />
+
+	</LinearLayout>
+
+</RelativeLayout>

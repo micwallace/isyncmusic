@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:padding="5dp">
+	<ImageView android:id="@+id/notify_icon"
+	    android:contentDescription="Syncronizing music"
+		android:layout_width="wrap_content" android:layout_height="fill_parent"
+		android:layout_alignParentLeft="true" />
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_toRightOf="@id/notify_icon"
+	    android:paddingLeft="10dp" >
+
+		<TextView
+		    android:id="@+id/notify_title"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="false"
+		    android:layout_alignParentTop="true"
+		    android:layout_below="@+id/notify_title"
+		    android:textSize="15dp" />
+
+		<RelativeLayout
+		    android:id="@+id/notify_playout"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/notify_title"
+		    android:layout_toRightOf="@+id/notify_icon"
+		    android:gravity="center_horizontal" >
+
+			<ProgressBar
+			    android:id="@+id/notify_progress"
+			    android:layout_width="fill_parent"
+			    android:layout_height="10dp"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="20dp"
+			    android:layout_marginRight="10dp"
+			    android:indeterminate="false"
+			    android:indeterminateOnly="false"
+			    android:progressDrawable="@android:drawable/progress_horizontal" />
+
+			<TextView
+			    android:id="@+id/notify_progtext"
+			    android:layout_width="35dp"
+			    android:layout_height="wrap_content"
+			    android:layout_marginRight="5dp"
+			    android:layout_toRightOf="@+id/notify_progress"
+			    android:text="0%"
+			    android:textSize="12dp" />
+
+		</RelativeLayout>
+
+		<TextView
+		    android:id="@+id/notify_text"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="false"
+		    android:layout_alignParentRight="false"
+		    android:layout_below="@+id/notify_playout" />
+
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="right"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#3584d1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+		<LinearLayout android:id="@+id/btnClear"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="3dp"
+		    android:background="@android:drawable/btn_default"
+		    android:gravity="center_vertical"
+		    android:orientation="horizontal" >
+
+		     	<ImageView
+	    			android:layout_width="25dp"
+	    			android:layout_height="wrap_content"
+	    			android:src="@drawable/clearicon" />
+				<TextView
+				    android:id="@+id/btnCleartxt"
+		    		android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginLeft="2dp"
+          			android:textColor="#000000"
+		    		android:text="Clear" >
+				</TextView>
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/btnStart"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:layout_marginTop="3dp"
+		    android:background="@android:drawable/btn_default"
+		    android:gravity="center_vertical"
+		    android:orientation="horizontal" >
+
+		     	<ImageView
+	    			android:layout_width="25dp"
+	    			android:layout_height="wrap_content"
+	    			android:src="@drawable/syncicon" />
+				<TextView
+		    		android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginLeft="2dp"
+		    		android:text="Sync All"
+		    		android:textColor="#000000" >
+				</TextView>
+		</LinearLayout>
+		<LinearLayout android:id="@+id/btnStartSelect"
+		     android:layout_width="wrap_content"
+		     android:layout_height="fill_parent"
+		     android:background="@android:drawable/btn_default"
+		     android:gravity="center_vertical"
+		     android:layout_marginTop="3dp"
+		     android:orientation="horizontal" >
+		     	<ImageView
+	    			android:layout_width="25dp"
+	    			android:layout_height="wrap_content"
+	    			android:src="@drawable/syncicon" />
+        		<TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_marginLeft="2dp"
+          			android:textColor="#000000"
+            		android:text="Sync" >
+				</TextView>
+		</LinearLayout>
+		
+		<LinearLayout android:id="@+id/btnStop"
+		     android:layout_width="wrap_content"
+		     android:layout_height="fill_parent"
+		     android:background="@android:drawable/btn_default"
+		     android:gravity="center_vertical"
+		     android:layout_marginTop="3dp"
+		     android:visibility="gone"
+		     android:orientation="horizontal" >
+		     	<ImageView
+	    			android:layout_width="25dp"
+	    			android:layout_height="wrap_content"
+	    			android:src="@drawable/stoppedicon" />
+				<TextView
+				    android:id="@+id/btnStoptxt"
+		    		android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginLeft="2dp"
+          			android:textColor="#000000"
+		    		android:text="Stop">
+				</TextView>	
+		</LinearLayout>
+
+		<TextView
+		    android:id="@+id/dlstat"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+	<ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+			<TableLayout 
+    			android:id="@+id/synctable"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content" >
+			</TableLayout>
+	</ScrollView>
+</LinearLayout>

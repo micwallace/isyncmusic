@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView android:id="@+id/selectheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove the unselected songs from the device? \n You will have to do this from the music player if you choose to keep them" />
+	 <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/selectheader"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/selecttext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:text=""
+            android:textColor="#FFF" />
+
+	</ScrollView>
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+         <Button
+             android:id="@+id/btnDelete"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:height="15dp"
+             android:text="Delete" />
+
+        <Button
+            android:id="@+id/btnKeep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:height="15dp"
+            android:text="Keep" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RadioGroup
+        android:id="@+id/setupmode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/autosetup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Automatic Setup" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="auto Setup description"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/manualsetup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Manual Setup" />
+
+        <TextView
+            android:id="@+id/manualsetup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Manual Setup description"
+            android:textColor="#FFF" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnmodeback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setupmode"
+        android:layout_alignParentBottom="true"
+        android:height="15dp"
+        android:text="Back"
+        android:width="100dp" />
+
+    <Button
+        android:id="@+id/btnmodenext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnmodeback"
+        android:layout_alignBottom="@+id/btnmodeback"
+        android:layout_alignRight="@+id/setupmode"
+        android:height="15dp"
+        android:text="Next"
+        android:width="100dp" />
+
+</RelativeLayout>

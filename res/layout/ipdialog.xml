@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+    
+    <Button
+        android:id="@+id/btnipback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:height="15dp"
+        android:text="Back"
+        android:width="100dp" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Enter Internal IP (WIFI use)"
+        android:textColor="#FFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title1"
+        android:layout_below="@+id/title1"
+        android:text="You can find this on a Windows PC by running CMD and typing ipconfig"
+        android:textColor="#FFF" />
+
+    <EditText
+        android:id="@+id/internalip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text2"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="IP of your local computer" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/internalip"
+        android:layout_below="@+id/internalip"
+        android:layout_marginTop="20dp"
+        android:text="Enter External IP (Cellular use)"
+        android:textColor="#FFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title2"
+        android:layout_below="@+id/title2"
+        android:text="You can find this by visiting http://www.whatismyip.com is your computers web browser"
+        android:textColor="#FFF" />
+
+    <EditText
+        android:id="@+id/externalip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text1"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="public IP provided by your ISP" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnipnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnipback"
+        android:layout_alignBottom="@+id/btnipback"
+        android:layout_alignRight="@+id/externalip"
+        android:height="15dp"
+        android:text="Next"
+        android:width="100dp" />
+
+</RelativeLayout>

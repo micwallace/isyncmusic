@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+ <PreferenceCategory
+   android:summary="Username and password information"
+   android:title="Login Information" >
+  <EditTextPreference
+     android:key="username"
+     android:summary="Please enter your login username"
+     android:title="Username" />
+  <EditTextPreference
+     android:key="password"
+     android:inputType="textPassword"
+     android:summary="Enter your password"
+     android:title="Password" />
+ </PreferenceCategory>
+ <PreferenceCategory
+   android:summary="Username and password information"
+   android:title="Settings" >
+  <CheckBoxPreference
+     android:key="webservice"
+     android:summary="Use webservice to update IP addresses"
+     android:title="Auto IP update"
+     android:defaultValue="true" />
+  <ListPreference
+     android:entries="@array/listOptions"
+     android:entryValues="@array/listValues"
+     android:key="syncfreq"
+     android:summary="Auto-Sync"
+     android:title="Auto-Sync frequency"
+     android:defaultValue="0" />
+ </PreferenceCategory>
+ <PreferenceCategory
+   android:summary="Username and password information"
+   android:title="Manual IP Configuration" >
+  <EditTextPreference
+     android:key="internalip"
+     android:summary="Enter your internal IP address"
+     android:title="Internal IP" />
+  <EditTextPreference
+     android:key="externalip"
+     android:summary="Enter your external IP address"
+     android:title="External IP" />
+  <EditTextPreference
+     android:key="serverport"
+     android:summary="Enter the server port (Default 8080)"
+     android:title="Server Port"
+     android:defaultValue="8080" />
+ </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    	<TextView android:id="@+id/infotext"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#FFF"
+              />
+
+    	<Button
+    	    android:id="@+id/btninfook"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@+id/infotext"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginTop="10dp"
+    	    android:height="15dp"
+    	    android:text="Continue"
+    	    android:width="140dp" />
+
+</RelativeLayout>

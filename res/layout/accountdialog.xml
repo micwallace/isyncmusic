@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Email Address"
+        android:textColor="#FFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title1"
+        android:layout_below="@+id/title1"
+        android:text="account email address"
+        android:textColor="#FFF" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title1"
+        android:layout_below="@+id/text2"
+        android:ems="10"
+        android:hint="email" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title1"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="15dp"
+        android:text="Password"
+        android:textColor="#FFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title1"
+        android:layout_below="@+id/title2"
+        android:text="isyncmusic account password"
+        android:textColor="#FFF" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text1"
+        android:layout_below="@+id/text1"
+        android:ems="10"
+        android:hint="password" />
+
+    <LinearLayout
+        android:id="@+id/errorlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/stoppedicon" />
+
+        <TextView
+            android:id="@+id/errortext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Error message here"
+            android:textColor="#FFF"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnaccnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignParentBottom="true"
+        android:height="15dp"
+        android:text="Back"
+        android:width="100dp" />
+
+    <Button
+        android:id="@+id/btnaccnnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnaccnback"
+        android:layout_alignBottom="@+id/btnaccnback"
+        android:layout_alignRight="@+id/password"
+        android:height="15dp"
+        android:text="Next"
+        android:width="100dp" />
+
+</RelativeLayout>

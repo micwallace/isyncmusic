@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	 <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/scrollview"
+        android:layout_marginBottom="50dp" >
+        <TextView
+            android:id="@+id/selecttext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout1"
+            android:fitsSystemWindows="true"
+            android:textColor="#FFF" />
+	</ScrollView>
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:height="15dp"
+            android:text="OK" />
+    </LinearLayout>
+</RelativeLayout>
